@@ -59,18 +59,6 @@
           "alt": "cabin",
           "videoSrc": "/assets/videos/Cabin.mp4"
 
-        },
-        {
-          "label": "Trunk",
-          "src": "/assets/images/trunk.png",
-          "alt": "trunk",
-          "videoSrc": "/assets/videos/Trunk.mp4"
-        },
-        {
-          "label": "Exterior",
-          "src": "/assets/images/exterior.png",
-          "alt": "exterior",
-          "videoSrc": "/assets/videos/Exterior.mp4"
         }
       ]
     }
