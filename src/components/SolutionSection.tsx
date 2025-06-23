@@ -64,7 +64,7 @@ const SolutionSection = () => {
   console.log(data);
 
   return (
-    <div className="bg-black min-h-screen flex items-center">
+    <div className="bg-black min-h-screen flex justify-center items-center">
       <div className="container text-white py-20 px-5">
         <h3 className="md:text-5xl text-4xl font-light text-center">
           Evolving the drive with <b className="font-semibold">360-degree</b>{" "}
@@ -168,7 +168,7 @@ const SolutionSection = () => {
           </div>
         </div>
         {/* medium */}
-        <div className="lg:hidden mt-10 flex flex-col gap-8">
+        <div className="lg:hidden mt-10 flex flex-col justify-center gap-8">
           {items.map(({ category, description, parts }, index) => (
             <div key={index}>
               <div className="text-center">
