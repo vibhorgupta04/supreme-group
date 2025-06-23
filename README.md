@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Supreme Group
 
-## Getting Started
+A modern, responsive, and accessible web application for Supreme Group, built with Next.js, React, and Tailwind CSS. The site showcases nonwoven solutions for automotive and commercial vehicles, with a focus on performance, usability, and maintainability.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Setup Instructions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/vibhorgupta04/supreme-group.git
+   cd supreme-group
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Learn More
+4. **Build for production:**
+   ```bash
+   npm run build
+   npm start
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Component Architecture Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **App Structure:**  
+  - `src/app/layout.tsx`: Root layout, applies global styles and fonts.
+  - `src/app/page.tsx`: Main page, composes the site from modular components.
 
-## Deploy on Vercel
+- **Components:**
+  - `Header`: Sticky, auto-hiding navigation bar with logo.
+  - `HeroSection`: Prominent landing section with headline and subheading.
+  - `SolutionSection`: Interactive, tabbed/video section for solutions, using Swiper for carousels.
+  - `ContactUs`: Form with validation for user inquiries.
+  - `Footer`: Responsive footer with navigation and company info.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Data & Constants:**
+  - `src/data/solutions.json`: Data for solution categories and parts.
+  - `src/data/footer.json`: Footer navigation and links.
+  - `src/constants/index.ts`: Shared constants for UI elements.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Hooks:**
+  - `useScroll`: Custom hook for header visibility on scroll.
+
+---
+
+## Responsive Design Strategy
+
+- **Tailwind CSS** is used for utility-first, mobile-first responsive design.
+- Layouts adapt using Tailwind's breakpoint classes (`md:`, `lg:`, etc.).
+- Swiper.js is used for touch-friendly carousels on smaller screens.
+- Flexbox and grid utilities ensure content is well-aligned and adapts to screen size.
+- Images and videos are set to scale responsively.
+
+---
+
+## Performance Optimization Techniques Employed
+
+- **Next.js**: Automatic code splitting, server-side rendering, and static asset optimization.
+- **Image Optimization**: Uses Next.js `Image` component for responsive, lazy-loaded images.
+- **Minimal JS/CSS**: Tailwind's utility classes reduce custom CSS bloat.
+- **Efficient State Management**: Local state only where necessary, no global state libraries.
+- **Custom Hooks**: `useScroll` minimizes unnecessary re-renders for header visibility.
+- **Data-Driven UI**: Solutions and footer sections are rendered from static JSON, reducing hardcoded UI.
+
+---
+
+## Explanation of Third-Party Libraries Used
+
+- **Next.js**: React framework for SSR, routing, and static site generation.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Swiper**: For responsive, touch-enabled carousels in the Solution section.
+- **Formik**: For robust, accessible form state management.
+- **Yup**: For schema-based form validation.
+- **Lucide-react**: For modern, customizable SVG icons.
+
+---
+
+## Assumptions Made and Decisions Taken
+
+- **Data-Driven UI**: Solutions and footer sections are rendered from JSON for easy updates.
+- **No Backend Integration**: The contact form currently only simulates submission (no backend).
+- **Single Page Structure**: All content is rendered on the main page for simplicity.
+- **Design System**: Tailwind CSS is used for consistency and rapid prototyping.
+- **Accessibility**: Prioritized in all components, especially forms and navigation.
+
+---
+
+## Challenges Faced and Potential Solutions
+
+- **Video Performance**: Ensuring smooth video playback across devices.  
+  *Potential Solution*: Use adaptive streaming or lower-res fallback videos for mobile.
+- **Form Handling**: No backend for form submissions.  
+  *Potential Solution*: Integrate with a service like Formspree, Netlify Forms, or a custom API.
+- **Content Management**: Static JSON is easy for small sites but not scalable.  
+  *Potential Solution*: Integrate a headless CMS (e.g., Contentful, Sanity) for dynamic content.
+- **Testing**: No automated tests yet.  
+  *Potential Solution*: Add unit and integration tests with Jest and React Testing Library.
+
+---
+
+## Suggested Upcoming Features and Improvements
+
+- **Backend Integration**: Connect the contact form to an email or CRM service.
+- **CMS Integration**: Move static content to a headless CMS for easier updates.
+- **Internationalization (i18n)**: Add support for multiple languages.
+- **Dark Mode**: Allow users to toggle between light and dark themes.
+- **SEO Enhancements**: Add meta tags, Open Graph, and structured data.
+- **Analytics**: Integrate Google Analytics or similar for usage tracking.
+- **Automated Testing**: Add tests for critical components and flows.
+
+---
+
+## Additional Remarks
+
+- The project is designed for clarity, maintainability, and scalability.
+- All code follows modern best practices for React and Next.js.
+- Contributions and suggestions are welcome!
+
