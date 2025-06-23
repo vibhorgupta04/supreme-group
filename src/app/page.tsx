@@ -12,7 +12,9 @@ export default function Home() {
       <main>
       <HeroSection />
       <SolutionSection />
-      <ContactUs />
+      <div id="contact-us">
+        <ContactUs />
+      </div>
       </main>
       <Footer />
     </>

@@ -26,6 +26,17 @@ export default function Header() {
             />
           </span>
         </Link>
+        <button
+          onClick={() => {
+            const section = document.getElementById('contact-us');
+            if (section) {
+              section.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          className="bg-[#5CD6FF] text-black font-semibold text-sm rounded-full px-4 py-2 cursor-pointer hover:shadow-md"
+        >
+          Contact Us
+        </button>
       </div>
     </header>
   );

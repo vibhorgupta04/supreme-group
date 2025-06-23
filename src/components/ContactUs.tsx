@@ -124,7 +124,7 @@ const ContactUs = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full sm:w-auto ring-2 ring-white text-white hover:text-black px-12 py-2 rounded-full hover:bg-white transition"
+                  className="w-full sm:w-auto ring-2 ring-white text-white hover:text-black px-12 py-2 rounded-full hover:bg-white transition cursor-pointer"
                 >
                   {isSubmitting ? 'Sending...' : 'Send'}
                 </button>
