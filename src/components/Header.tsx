@@ -10,7 +10,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
-      } 2xl:py-2 xlg:py-1 py-2 z-50 bg-white shadow-sm`}
+      } 2xl:py-2 xlg:py-1 py-2 px-4 z-50 bg-white shadow-sm`}
     >
       <div className="container h-full xlg:py-3 py-1 mt-[2px] flex gap-4 items-center justify-between m-auto">
         <Link href="/">
