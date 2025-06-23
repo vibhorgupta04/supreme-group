@@ -1,0 +1,78 @@
+{
+  "items": [
+    {
+      "category": "Passenger vehicles",
+      "description": "Revving up Nonwoven innovation from interior to exterior.",
+      "parts": [
+        {
+          "label": "Complete Body",
+          "src": "/assets/images/complete-body.png",
+          "alt": "body",
+          "videoSrc": "/assets/videos/Passenger Alpha - Trim.mp4"
+        },
+        {
+          "label": "Front",
+          "src": "/assets/images/front.png",
+          "alt": "front",
+          "videoSrc": "/assets/videos/Front.mp4"
+        },
+        {
+          "label": "Cabin",
+          "src": "/assets/images/cabin.png",
+          "alt": "cabin",
+          "videoSrc": "/assets/videos/Cabin.mp4"
+
+        },
+        {
+          "label": "Trunk",
+          "src": "/assets/images/trunk.png",
+          "alt": "trunk",
+          "videoSrc": "/assets/videos/Trunk.mp4"
+        },
+        {
+          "label": "Exterior",
+          "src": "/assets/images/exterior.png",
+          "alt": "exterior",
+          "videoSrc": "/assets/videos/Exterior.mp4"
+        }
+      ]
+    },
+    {
+      "category": "Commercial vehicles",
+      "description": "Advancing Nonwoven engineering for heavy-duty vehicles.",
+     "parts": [
+        {
+          "label": "Complete Body",
+          "src": "/assets/images/complete-body.png",
+          "alt": "body",
+          "videoSrc": "/assets/videos/Passenger Alpha - Trim.mp4"
+        },
+        {
+          "label": "Front",
+          "src": "/assets/images/front.png",
+          "alt": "front",
+          "videoSrc": "/assets/videos/Front.mp4"
+        },
+        {
+          "label": "Cabin",
+          "src": "/assets/images/cabin.png",
+          "alt": "cabin",
+          "videoSrc": "/assets/videos/Cabin.mp4"
+
+        },
+        {
+          "label": "Trunk",
+          "src": "/assets/images/trunk.png",
+          "alt": "trunk",
+          "videoSrc": "/assets/videos/Trunk.mp4"
+        },
+        {
+          "label": "Exterior",
+          "src": "/assets/images/exterior.png",
+          "alt": "exterior",
+          "videoSrc": "/assets/videos/Exterior.mp4"
+        }
+      ]
+    }
+  ]
+}

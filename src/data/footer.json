@@ -1,0 +1,39 @@
+{
+  "data": [
+  {
+    "title": "Applications",
+    "items": [
+      { "label": "Apparel", "link": "/applications/apparel" },
+      { "label": "Automotive", "link": "/applications/automotive" },
+      { "label": "Filtration", "link": "/applications/filtration" },
+      { "label": "Customized Nonwoven", "link": "/applications/customized-nonwoven" }
+    ]
+  },
+  {
+    "title": "Company",
+    "items": [
+      { "label": "Who We Are", "link": "/who-we-are" },
+      { "label": "Global Competency", "link": "/global-competency" },
+      { "label": "Innovation", "link": "/innovation" },
+      { "label": "ESG Impact", "link": "/esg-impact" }
+    ]
+  },
+  {
+    "title": "More",
+    "items": [
+      { "label": "Contact Us", "link": "/contact-us" },
+      { "label": "Careers", "link": "/careers" }
+    ]
+  },
+  {
+    "title": "Follow Us",
+    "items": [
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/company/supreme-group-company/",
+        "external": true
+      }
+    ]
+  }
+]
+}

@@ -1,0 +1,5 @@
+const RADIUS = 24;
+const STROKE = 5;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
+export { RADIUS, STROKE, CIRCUMFERENCE };
