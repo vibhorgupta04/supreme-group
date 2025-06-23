@@ -61,8 +61,6 @@ const SolutionSection = () => {
     };
   }, [activeVideo]);
 
-  console.log(data);
-
   return (
     <div className="bg-black min-h-screen flex justify-center items-center">
       <div className="container text-white py-20 px-5">
